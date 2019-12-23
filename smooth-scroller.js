@@ -1,3 +1,5 @@
+window.onload = function(){
+    
     window.scrollTo(0, 0);
     var s1_y = document.querySelector('#page1').offsetTop;
     var s2_y = document.querySelector('#page2').offsetTop;
@@ -38,3 +40,7 @@
         smooth_scroll('#' + target_page, this.parentElement.offsetTop);
       });
     }
+    
+    
+} // end onload
+
