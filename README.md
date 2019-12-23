@@ -12,10 +12,10 @@ Vanilla JS smooth scroll by CSSLICK
   </section>
   <section id="page2">
     <h1>page 2</h1>
-    <a class="btn_page" href="#page3">page2</a>
+    <a class="btn_page" href="#page3">page3</a>
   </section>
   <section id="page3">
     <h1>page 3</h1>
-    <a class="btn_page" href="#page1">page2</a>
+    <a class="btn_page" href="#page1">page1</a>
   </section>
 ```
