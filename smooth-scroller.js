@@ -1,8 +1,8 @@
 var smooth_scroll = function(){
-  
+
   // (이동할 페이지 위치, 현재 페이지 위치)
-  function smooth_scroll(el, _y) {
-    var y = document.querySelector('#' + el).offsetTop;
+  function smooth_scroll(target_page, _y) {
+    var y = document.querySelector(target_page).offsetTop;
     var i = _y; // 현재 페이지 위치
     console.log('current position y: ' + i, y); // 현재위치, 이동할 위치
     var int = setInterval(function () {
@@ -21,12 +21,12 @@ var smooth_scroll = function(){
     var btn_page = document.querySelectorAll('.btn_page');
 
     for (var i = 0; i < btn_page.length; i++) {
-      btn_page[i].addEventListener('click', function () {
-        var target_page = this.getAttribute('href').substring(1);
+      btn_page[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        var target_page = this.getAttribute('href');
         console.log(target_page);
         // 이동할 페이지 위치, 현재 페이지 위치
         smooth_scroll(target_page, this.parentElement.offsetTop);
-        return false;
       });
     }
 
