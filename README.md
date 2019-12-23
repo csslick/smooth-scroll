@@ -1,5 +1,5 @@
 # smooth-scroll
-vanilla JS smooth scroll
+Vanilla JS smooth scroll by CSSLICK
 
 ## Usage
 - set target page name into ```data-page``` attribute
